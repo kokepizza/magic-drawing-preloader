@@ -88,6 +88,11 @@ nav a:hover {
 .section:has(h3) {
     background-color: var(--color-text);
     color: var(--color-bg);
+    padding: 0;
+
+    h3 {
+        padding: var(--spacing);
+    }
 }
 
 .grid {
@@ -131,7 +136,7 @@ nav a:hover {
 }
 
 .manifesto-text p {
-    padding: 1.5rem 0 1.5rem 1rem;
+    padding: var(--spacing);
     margin: 0;
     border-top: 3px solid var(--color-bg);
 }
