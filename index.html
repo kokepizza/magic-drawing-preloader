@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preloader - Dibuja y guarda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Preloader Component -->
+    <div class="preloader-component" id="preloader">
+        <div class="container">
+            <h1>Dibuja</h1>
+            <div class="controls">
+                <div class="control-group">
+                    <label for="brush-size">Tamaño del pincel:</label>
+                    <input type="range" id="brush-size" min="1" max="50" value="5">
+                    <span id="size-value">5px</span>
+                </div>
+                <div class="control-group">
+                    <label for="brush-color">Color:</label>
+                    <input type="color" id="brush-color" value="#000000">
+                </div>
+                <button id="clear-btn">Borrar Todo</button>
+            </div>
+            <div class="canvas-container">
+                <canvas id="drawing-canvas"></canvas>
+            </div>
+            <div class="instructions" id="drawing-instructions">
+                <p>Dibuja algo interesante y envíalo cuando estés listo.</p>
+                <p>Presiona <kbd>Espacio</kbd> o <kbd>Esc</kbd> para borrar el lienzo.</p>
+            </div>
+            <div class="submit-container" id="submit-container" style="display: none;">
+                <button id="submit-drawing" class="submit-btn"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content (would be your actual website) -->
+    <div class="main-content" id="main-content">
+        <div class="container">
+            <h1>Contenido Principal</h1>
+            <p>Esta es la página principal que se mostrará después de enviar el dibujo.</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
